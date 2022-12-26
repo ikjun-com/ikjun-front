@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backTest{
+    height: 315vh;
+    width: 100%;
+    background-image: linear-gradient(120deg, #181D31,#678983);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    margin: 0;
+}
+
+
+/*노가다로 메뉴 버튼만들기 부분 솔직히 이해안감*/
+#menuicon{
+    display: none;
+
+}
+#menuicon + label {
+    display: block;
+    width:30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+#menuicon + label span{
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: white;
+    transition: all .35s;
+}
+#menuicon + label span:nth-child(1){
+    top:0;
+}
+#menuicon+ label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+#menuicon + label span:nth-child(3){
+    bottom:0;
+}
+#menuicon:checked + label span:nth-child(1){
+    top:50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+#menuicon:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#menuicon:checked + label span:nth-child(3){
+    bottom:50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+.sidebar {
+    width: 280px;
+    height: 100%;
+    border-right-style:outset;
+    border-color:#678983;
+    background: #181D31;
+    position: fixed;
+    top:0;
+    left: -300px;
+    z-index: 1;
+    transition:all .35s;
+}
+#menuicon:checked + label + div {
+    left:0;
+}
+input[id="menuicon"] + label{
+    display: block;
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    left:0;
+    top:calc(50% - 25px);
+    transition:all .35s;
+    cursor: pointer;
+}
+input[id="menuicon"]:checked + label{
+    z-index: 2;
+    right:300px;
+}
+/*여기 위까지가 메뉴버튼누르면 x로 바뀌는 코드*/
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    position: relative;
+    bottom: auto;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+.navbar_top {
+    word-spacing: 5px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    text-align: right;
+}
+.navbar_top i{
+    color : white;
+}
+
+.div_name{
+    font-size: 80px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 25vh;
+}
+.div_tittle{
+    font-size:20px;
+    color: #c4c1c1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 25vh;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*검색창 관련부분*/
+.search_bar{
+    width: 100%;
+    max-width: 780px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search_bar input{
+    border-radius: 60px;
+    flex: 1;
+    border:0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+}
+.search_bar i{
+
+    width: 25px;
+}
+.search_bar button{
+    position: relative;
+    left: -80px;
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    color: #181D31;
+}
+/*메뉴 눌렀을때 hover효과 주는 부분*/
+.bar-links{
+    list-style: none;
+    position: relative;
+    top: 50px;
+}
+.bar-links li{
+    padding: 10px 0;
+}
+.bar-links li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+}
+.bar-links li a i{
+    font-size: 22px;
+    margin-right: 20px;
+
+}
+.active{
+    background: #E6DDC4;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    left: 0;
+    top: 2.6%;
+    z-index: -1;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255,255,255,0.4);
+    display: none;
+    transition: top 0.3s;
+}
+.bar-links li:hover a{
+    color:#678983;
+    transition: 0.3s;
+}
+.bar-links li:hover ~ .active{
+    display: block;
+}
+.bar-links li:nth-child(1):hover ~ .active{
+    top:2.6%;
+
+}
+.bar-links li:nth-child(2):hover ~ .active{
+    top:29%;    
+}
+.bar-links li:nth-child(3):hover ~ .active{
+    top:54%;    
+}
+.bar-links li:nth-child(4):hover ~ .active{
+    top:79%;    
+}
