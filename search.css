@@ -10,15 +10,14 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
 body{
     margin: 0;
 }
 
-
 /*노가다로 메뉴 버튼만들기 부분 솔직히 이해안감*/
 #menuicon{
     display: none;
-
 }
 #menuicon + label {
     display: block;
@@ -104,7 +103,9 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 12px;
+    padding: 30px 24px;
+    border-bottom-style:outset;
+    border-color:white;
 }
 .navbar_top {
     word-spacing: 5px;
@@ -126,15 +127,7 @@ a{
     justify-content: center;
     top: 25vh;
 }
-.div_tittle{
-    font-size:20px;
-    color: #c4c1c1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 25vh;
-}
+
 .container{
     width: 100%;
     min-height: 100vh;
@@ -152,29 +145,29 @@ a{
     max-width: 780px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    top:0;
     border-radius: 60px;
-    padding: 10px 20px;
-    backdrop-filter: blur(4px) saturate(180%);
+    padding: -10px 10px;
 }
 .search_bar input{
     border-radius: 60px;
     flex: 1;
     border:0;
     outline: none;
-    padding: 24px 20px;
-    font-size: 20px;
+    padding: 20px 10px;
+    font-size: 15px;
 }
 .search_bar i{
-
     width: 25px;
 }
 .search_bar button{
     position: relative;
-    left: -80px;
+    left: -50px;
     border: 0;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 10px;
+    height: 10px;
     cursor: pointer;
     color: #181D31;
 }
@@ -182,7 +175,7 @@ a{
 .bar-links{
     list-style: none;
     position: relative;
-    top: 50px;
+    top: 110px;
 }
 .bar-links li{
     padding: 10px 0;
@@ -197,7 +190,6 @@ a{
 .bar-links li a i{
     font-size: 22px;
     margin-right: 20px;
-
 }
 .active{
     background: #E6DDC4;

@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+}
+body{
+    transition: background-color 1s;
+}
+
+.dark{
+    background-color: black;
+}
+.sun, .moon{
+    font-size: 12rem;
+    width: 30px;
+    height: 15px;
+}
+.moon{
+    position: absolute;
+
+}
+.moon-logo{
+    opacity: 1;
+    transform: translateY(20%) ;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px 5px;
+}
+.sun{
+    position: absolute;
+
+}
+.sun-logo{
+    opacity: 0;
+    transform: translateY(0) ;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 5px;
+
+}
+.animate-sun{
+    opacity: 1;
+    transform: translateY(20%);
+    color: aliceblue;
+    
+}
+.animate-moon{
+    opacity: 0;
+    transform: translateY(0%);
+    color: aliceblue;
+}
