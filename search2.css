@@ -6,14 +6,16 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to left top,#121920, #536976);
- 
+    background-color: #121920;
 }
-
+.header {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
 .header a{
-    padding: 0 27px ;
     color: #DFDFDF;
-    font-size: 30px;
+    font-size: 35px;
 }
 a{
     text-decoration: none;
@@ -25,12 +27,13 @@ a{
     width: 200px;
     height: 100%;
     border: solid;
+    border-right-color: #848484;
+    position: relative;
 }
 
 .bar-links{
     list-style: none;
     position: relative;
-    top: 110px;
 }
 .bar-links li{
     padding: 10px 10px;
@@ -48,10 +51,11 @@ a{
 }
 /*윗상단 메뉴*/
 .navbar {
-    position: fixed;
-    top: 20px;
-    left: 0;
-    right: 0;
+    width: 88.4%;
+    height: 37px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,21 +67,28 @@ a{
     list-style: none;
     display: flex;
     position: relative;
-    right: 70px;
-
 }
 .navbar-top i{
     color : white;
 }
 .navbar-join{
-    border-style: outset;
-    border-color: red;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    background-color: #1F252C;
+    font-style: bold;
+    border: none;
     border-radius: 30px;
     padding: 10px 10px;
 }
 .navbar-login{
+    position: relative;
+    left: 100px;
+    top: 20px;
     border-style: outset;
-    border-color: blue;
+    border: none;
+    background-color: #9747FF;
+    color: #D7BAFF;
     border-radius: 30px;
     padding: 10px 10px;
 }
@@ -85,12 +96,11 @@ a{
 .search-bar{
     position: absolute;
     display: flex;
-    width: 100%;
-    max-width: 1000px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -67%);
+    width: 1200px;
+    height: 50px;
     border-radius: 60px;
+    left: 70px;
+    bottom: 15px;
 }
 .search-bar input{
     border-radius: 15px;
@@ -115,40 +125,94 @@ a{
     cursor: pointer;
     color: #181D31;   
 }
-/*메뉴 눌렀을때 hover효과 주는 부분
-.active{
-    background: #999;
-    width: 100%;
-    height: 47px;
+.sort{
+    color: #9c9c9c;
     position: absolute;
-    left: 0;
-    top: 2.6%;
-    z-index: -1;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(255,255,255,0.4);
-    display: none;
-    transition: top 0.3s;
+    top: 110px;
+    left: 280px;
 }
-.bar-links li:hover a{
-    color:#FFF;
-    transition: 0.3s;
+.sort select{
+    color: #9c9c9c;
+    background-color: #1F252C;
+    border-radius: 13px;
+    width: 210px;
+    height: 35px;
 }
-.bar-links li:hover ~ .active{
-    display: block;
+.filter{
+    color: #9c9c9c;
+    position: absolute;
+    top: 110px;
+    left: 500px;
 }
-.bar-links li:nth-child(1):hover ~ .active{
-    top:2.6%;
+.filter select {
+    color: #9c9c9c;
+    background-color: #1F252C;
+    border-radius: 13px;
+    width: 210px;
+    height: 35px;
 }
-.bar-links li:nth-child(2):hover ~ .active{
-    top:29%;   
-     
+.content{
+    position: absolute;
+    width: 1300px;
+    height: 170px;
+    border: 1px solid gray;
+    border-radius: 13px;
+    background-color: #1F252C;
+    top: 185px;
+    left: 280px;
 }
-.bar-links li:nth-child(3):hover ~ .active{
-    top:54%;    
+.content h2{
+    position: relative;
+    color: #DFDFDF;
+    padding-left:40px;
+    padding-top: 30px;
+    font-size: 32px;
 }
-.bar-links li:nth-child(4):hover ~ .active{
-    top:79%;    
-*/
+.sub{
+    position: absolute;
+    color: #9c9c9c;
+    padding-left:40px;
+    font-size: 17px;
+}
+.tag-title i{
+    position: absolute;
+    color: #9c9c9c;
+    padding-left:40px;
+    bottom:30px;
+    font-size: 15px;
+}
+.write-date{
+    position: absolute;
+    color: #DFDFDF;
+    font-size: 17px;
+    left: 90%;
+    bottom: 70%;
+}
+.click-btn{
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    top:62%;
+    left: 80%;
+}
+.up-icon, .down-icon, .comment-icon{
+    padding: 10px 10px;
+    color: white;
+}
+.up-icon i{
+    color: rgb(132, 228, 132);
+    padding: 10px 10px;
+}
+.down-icon i{
+    color: rgb(205, 47, 47);
+    padding: 10px 10px;
+}
+.comment-icon i{
+    color: rgb(89, 89, 228);
+    padding: 10px 10px;
+}
 .footer{
     position: relative;
     bottom: auto;

@@ -1,52 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="search.css">
-    <title>SearchPage</title>
-    <script src="https://kit.fontawesome.com/60e756bd1b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="img">
-        <nav class="navbar">
-            <input type="checkbox" id="menuicon">
-               <label for="menuicon">
-                <span></span>
-                <span></span>
-                <span></span>
-               </label>
-               <div class="sidebar">
-               <ul class="bar-links">
-                <li><a href="#"><i class="fa-solid fa-house"></i><p>Dasboard</p></a></li>
-                <li><a href="#"><i class="fa-regular fa-comment"></i><p>Message</p></a></li>
-                <li><a href="#"><i class="fa-regular fa-user"></i><p>Popular</p></a></li>
-                <li><a href="#"><i class="fa-solid fa-gear"></i></i><p>Settings</p></a></li>
-                <div class="active"></div>
-               </ul>
-               </div>
-               <form action="https://www.google.com/search" method="get" class="search_bar">
-                <input type="text" placeholder="search" name="q">
-                <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-            </form>
-
-            <div class="navbar_menu"> </div>
-            <ul class="navbar_top">
-            <li><a href="">회원가입&nbsp;&nbsp;</a></li>
-            <li><a href="">로그인&nbsp;</a></li>
-            </ul>
-        </nav>
-        
-    </div>
-</body>
-<footer class="footer">
-    <ul class="navbar_links">
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-discord"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-tiktok"></i>
+<div class="side-menu">
+    <ul class="bar-links">
+        <li><a href="#"><i class="fa-solid fa-house"></i>
+                <p>Dasboard</p>
+            </a></li>
+        <li><a href="#"><i class="fa-regular fa-comment"></i>
+                <p>Message</p>
+            </a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i>
+                <p>Popular</p>
+            </a></li>
+        <li><a href="#"><i class="fa-solid fa-gear"></i></i>
+                <p>Settings</p>
+            </a></li>
+        <div class="active"></div>
     </ul>
-</footer>
-</html>
+</div>
+<nav class="navbar">
+    <div class="header"><a href="#"> I K J U N</a></div>
+    <form action="https://www.google.com/search" method="get" class="search-bar">
+        <input type="text" placeholder="검색하세요" autocomplete="off">
+        <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+    </form>
+
+    <ul class="navbar-top">
+        <li><a href="signUp2.html" class="navbar-join">회원가입</a></li> &nbsp; &nbsp; &nbsp;
+        <li><a href="loginPage2.html" class="navbar-login">로그인</a></li>
+    </ul>
+</nav>
+<div class="filter">
+    <select name="sort">
+        <option value="" selected="selected">최신순</option>
+        <option value="popular">인기순</option>
+        <option value="bad"></option>
+    </select>
+</div> 

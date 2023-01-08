@@ -11,9 +11,9 @@
 <body>
 <div class="container">
     <div class="side-menu">
-        
+        <div class="header"><a href="#"> I K J U N</a></div>
         <ul class="bar-links">
-         <li><a href="#"><i class="fa-solid fa-house"></i><p>Dasboard</p></a></li>
+         <li><a href="#"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
          <li><a href="#"><i class="fa-regular fa-comment"></i><p>Message</p></a></li>
          <li><a href="#"><i class="fa-regular fa-user"></i><p>Popular</p></a></li>
          <li><a href="#"><i class="fa-solid fa-gear"></i></i><p>Settings</p></a></li>
@@ -21,18 +21,46 @@
         </ul>
     </div class="nav-head">
         <nav class="navbar">
-            <div class="header"><a href="#"> I K J U N</a></div>
             <form action="https://www.google.com/search" method="get" class="search-bar">
-                <input type="text" placeholder="검색하세요" autocomplete="off" >
-                <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-            </form>
-       
-            <ul class="navbar-top">
-            <li><a href="signUp2.html" class="navbar-join">회원가입</a></li> &nbsp; &nbsp; &nbsp;
-            <li><a href="loginPage2.html" class="navbar-login">로그인</a></li>
-            </ul>
+                <input type="text" placeholder="검색하세요" autocomplete="off">
+                <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                <ul class="navbar-top">
+                    <li><a href="signUp2.html" class="navbar-join">회원가입</a></li> &nbsp; &nbsp; &nbsp;
+                    <li><a href="loginPage2.html" class="navbar-login">로그인</a></li>
+                </ul>
+            </form>  
         </nav>
-
+   </div>
+   <main>
+    <div class="sort">정렬</br>
+        <select name="sort">
+            <option value="" selected="selected">최신순</option>
+            <option value="popular">인기순</option>
+        </select>
+    </div>
+    <div class="filter">필터</br>
+        <select name="sort-major">
+            <option value="" selected="selected">학과</option>
+            <option value="popular">컴퓨터학부</option>
+        </select>
+        <select name="sort-subject">
+            <option value="" selected="selected" >과목명</option>
+            <option value="popular">컴퓨터수학2</option>
+        </select>
+    </div>
+    <div class="filter"></div>
+    <div class="content">
+        <h2>포인터와 구조체 연습문제</h2>
+        <div class="write-date">2022.12.26</div>
+        <div class="sub">숭실대학교 | 컴퓨터학부 | 프로그래밍 및 실습</div>
+        <div class="tag-title"><i class="fa-solid fa-tag">#숭실대학교#기출#김익수</i></div>
+        <ul class="click-btn">
+            <li class="up-icon"><i class="fa-solid fa-thumbs-up"></i>100</li>
+            <li class="down-icon"><i class="fa-solid fa-thumbs-down"></i>23</li>
+            <li class="comment-icon"><i class="fa-solid fa-comment"></i>4</li>
+        </ul>
+    </div>
+   </main>
  </div>  
 </body>
 <!--<footer class="footer">

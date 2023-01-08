@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #121920;
+}
+
+.container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #DFDFDF;
+}
+
+.container h1{
+    font-size: 160px;
+    letter-spacing: 3px;
+
+}
+.container a{
+    text-decoration: none;
+    color: #fff;
+    background: #9747ff;
+    border-radius: 25px;
+    padding: 12px 24px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform:uppercase;
+    position: relative;
+    top: 30px;
+}
