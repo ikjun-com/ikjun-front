@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boardWrite.css">
+   
+    <script src="https://kit.fontawesome.com/60e756bd1b.js" crossorigin="anonymous"></script>
+    <title>writePage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <header>
+                <div class="header">
+                    <div class="drop-down">
+                        <select name="major" id="major" onchange="tagSelected(this)">
+                            <option value="" selected="selected" >학과</option>
+                            <option value="a">컴퓨터학부</option>
+                            <option value="b">소프트웨어학부</option>
+                            <option value="c">글로벌미디어학부</option>
+                        </select>
+                        <select name="subject" id="subject">
+                            <option value="" selected="selected">과목명</option>
+                           
+                        </select>
+                        <select name="">
+                            <option value="" selected="selected" >별점</option>
+                            <option value="">0</option>
+                            <option value="">1</option>
+                        </select>
+                        <button class="write-btn">글쓰기</button>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" placeholder="제목을 입력하세요." class="input-title">
+                </div>
+            </header>
+        
+            <main>
+                <div class="problom">
+                    <h3>문제or필기</h3>
+                    <textarea type="text" placeholder="문제를 입력하세요." class="input-problom" cols="30" rows="10" oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'></textarea>
+                </div>
+                <div class="answer">
+                    <h3>답</h3>
+                    <textarea type="text" placeholder="답을 입력하세요." class="input-answer" cols="30" rows="10" oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'></textarea>
+                </div>
+                <div class="solve">
+                    <h3>해설</h3>
+                    <textarea type="text" placeholder="해설을 입력하세요." class="input-solve" cols="30" rows="10" oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'></textarea>
+                </div>
+                <div class="hash-tag">
+                    <h3>#태그</h3>
+                    <textarea type="text" placeholder="#태그를 입력하세요." class="input-hash-tag" cols="30" rows="3" oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'></textarea>
+                </div>
+            </main>
+            <footer>footer</footer>
+        </div>
+        
+    </div>
+ <script src="boardWrite.js"></script>
+</body>
+</html>

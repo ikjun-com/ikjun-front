@@ -2,120 +2,118 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.container{
-    width: 100%;
-    height: 100vh;
     background-color: #121920;
-    
-}
-.header {
-    padding-top: 30px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-}
-.header a{
-    color: #DFDFDF;
-    font-size: 35px;
-}
-a{
+  }
+  .container{
+    width: 1220px;
+    height: 850px;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+  }
+  a{
     text-decoration: none;
     color: white;
     list-style: none;
-}
-/*왼쪽 사이드 메뉴*/
-.side-menu{
+  }
+  /*사이드 메뉴 css 근데 굳이 있어야되나..?*/
+  .side-menu{
     width: 200px;
-    height: 100%;
+    height: 100vh;
     border: solid;
-    border-right-color: #848484;
+    border-right-color: #1F252C;
     position: relative;
-}
-
-.bar-links{
+  }
+  .side-menu h1{
+    position: relative;
+    padding-left: 15px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 1;
+  }
+  .bar-links{
     list-style: none;
     position: relative;
-}
-.bar-links li{
+    top:30px;
+  }
+  .bar-links li{
     padding: 10px 10px;
-}
-.bar-links li a{
+  }
+  .bar-links li a{
     color: white;
     text-decoration: none;
     padding: 10px 14px;
     display: flex;
     align-items: center;
-}
-.bar-links li a i{
+  }
+  .bar-links li a i{
     font-size: 22px;
     margin-right: 20px;
-}
-/*윗상단 메뉴*/
-.navbar {
-    width: 88.4%;
-    height: 37px;
+  }
+  
+  /*nav-bar*/
+  .navbar {
+    width: 1000px;
+    height: 65px;
     position: absolute;
-    top: 50px;
+    top: 24px;
     left: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom-style:outset;
-    border-color:white;
-    padding-bottom: 15px;
-}
-.navbar-top {
+    border-bottom-style:solid;
+    border-color:#1F252C;
+  }
+  .navbar-top {
     list-style: none;
     display: flex;
     position: relative;
-}
-.navbar-top i{
+    float: right;
+    top:10px;
+    left: 30px;
+  }
+  .navbar-top i{
     color : white;
-}
-.navbar-join{
-    position: relative;
-    top: 20px;
-    left: 100px;
+  }
+  .navbar-join{
     background-color: #1F252C;
     font-style: bold;
     border: none;
     border-radius: 30px;
     padding: 10px 10px;
-}
-.navbar-login{
-    position: relative;
-    left: 100px;
-    top: 20px;
+  }
+  .navbar-login{
     border-style: outset;
     border: none;
     background-color: #9747FF;
     color: #D7BAFF;
     border-radius: 30px;
     padding: 10px 10px;
-}
-/*검색창 관련부분*/
-.search-bar{
-    position: absolute;
+  }
+  /*검색창 관련부분*/
+  .search-bar{
+    position: relative;
     display: flex;
-    width: 1200px;
+    width: 900px;
     height: 50px;
     border-radius: 60px;
     left: 70px;
-    bottom: 15px;
-}
-.search-bar input{
+  
+  
+  }
+  .search-bar input{
     border-radius: 15px;
     flex: 1;
     border:0;
     outline: none;
     padding: 20px 10px;
     font-size: 15px;
-}
-.search-bar i{
+    background-color: #1F252C;
+  }
+  .search-bar i{
     width: 25px;
     font-size: 24px;
-}
-.search-bar button{
+    color: #FFFFFF;
+  }
+  .search-bar button{
     position: relative;
     top: 14px;
     right: 33px;
@@ -124,72 +122,75 @@ a{
     width: 20px;
     height: 22px;
     cursor: pointer;
-    color: #181D31;   
-}
-.sort{
+    color: #1F252C;   
+  }
+  /*dropdown설정부분*/
+  select {
+    text-align-last: center;
+  }
+  .sort{
     color: #9c9c9c;
     position: absolute;
     top: 110px;
     left: 280px;
-}
-.sort select{
+  }
+  .sort select{
     color: #9c9c9c;
     background-color: #1F252C;
     border-radius: 13px;
-    width: 210px;
+    width: 150px;
     height: 35px;
-}
-.filter{
+  }
+  .filter{
     color: #9c9c9c;
     position: absolute;
     top: 110px;
     left: 500px;
-}
-.filter select {
+  }
+  .filter select {
     color: #9c9c9c;
     background-color: #1F252C;
     border-radius: 13px;
-    width: 210px;
+    width: 150px;
     height: 35px;
-}
-.content{
+  }
+  /*임시로 만드는 본문부분 업데이트예정*/
+  .content{
     position: absolute;
-    width: 1300px;
+    width: 900px;
     height: 170px;
-    border: 1px solid gray;
+    border: 1px solid #9c9c9c;
     border-radius: 13px;
-    background-color: #1F252C;
-    top: 185px;
+    top: 190px;
     left: 280px;
-}
-.content h2{
+  }
+  .content h2{
     position: relative;
+    left: 40px;
     color: #DFDFDF;
-    padding-left:40px;
-    padding-top: 30px;
-    font-size: 32px;
-}
-.sub{
+    font-size: 29px;
+  }
+  .sub{
     position: absolute;
     color: #9c9c9c;
     padding-left:40px;
-    font-size: 17px;
-}
-.tag-title i{
+    font-size: 14px;
+  }
+  .tag-title i{
     position: absolute;
     color: #9c9c9c;
     padding-left:40px;
     bottom:30px;
     font-size: 15px;
-}
-.write-date{
+  }
+  .write-date{
     position: absolute;
     color: #DFDFDF;
     font-size: 17px;
     left: 90%;
     bottom: 70%;
-}
-.click-btn{
+  }
+  .click-btn{
     list-style: none;
     text-decoration: none;
     position: absolute;
@@ -197,25 +198,8 @@ a{
     display: flex;
     top:62%;
     left: 80%;
-}
-.up-icon, .down-icon, .comment-icon{
+  }
+  .up-icon, .down-icon, .comment-icon{
     padding: 10px 10px;
-    color: white;
-}
-.up-icon i{
-    border:2px solid #64b69c;
-    padding: 10px 10px;
-}
-.down-icon i{
-    border-color:1px solid  #ff5a4d;
-    padding: 10px 10px;
-}
-.comment-icon i{
-    color: #0084ba;
-    padding: 10px 10px;
-}
-.footer{
-    position: relative;
-    bottom: auto;
-    width: 100%;
-}
+    color: #dfdfdf;
+  }
