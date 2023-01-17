@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#121920;
+  }
+  .container{
+    width: 1220px;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+  }
+
+  /*사이드 메뉴 */
+  .side-menu{
+    width: 200px;
+    height: 100vh;
+    border: solid;
+    border-right-color: #1F252C;
+    position: relative;
+  }
+  .side-menu h1{
+    position: relative;
+    padding-left: 15px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 1;
+  }
+  .bar-links{
+    list-style: none;
+    position: relative;
+    top:30px;
+  }
+  .bar-links li{
+    padding: 10px 10px;
+  }
+  .bar-links li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  .bar-links li a i{
+    font-size: 22px;
+    margin-right: 20px;
+  }
+  
+  /*nav-bar*/
+  .navbar {
+    width: 1000px;
+    height: 85px;
+    position: absolute;
+    top: 34px;
+    left: 200px;
+    border-bottom-style:solid;
+    border-color:#1F252C;
+  }
+  .navbar-top {
+    list-style: none;
+    display: flex;
+    position: relative;
+    bottom: 10%;
+    left: 4%;
+    width: 300px;
+    height: 60px;
+ 
+  }
+  .navbar-top i{
+    color : white;
+  }
+
+
+  /*로그인부분*/
+  .profile-img{
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+  }
+  .nickname{
+    color: #9747FF;
+    font-size: 20px;
+    height: 20px;
+    display: block;
+    padding-left: 7%;
+  }
+  .sub-control{
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    display: flex;
+    font-size: 1%;
+    padding-left: 7%;
+  }
+  #bell{
+    position: relative;
+    padding-left: 8%;
+    padding-top: 4%;
+    font-size: 20px;
+  }
+  /*검색창 관련부분*/
+  .search-bar{
+    position: relative;
+    display: flex;
+    width: 900px;
+    height: 50px;
+    border-radius: 60px;
+    left: 70px;
+  
+  
+  }
+  .search-bar input{
+    border-radius: 15px;
+    flex: 1;
+    border:0;
+    outline: none;
+    padding: 20px 10px;
+    font-size: 15px;
+    background-color: #1F252C;
+  }
+  .search-bar i{
+    width: 25px;
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #1F252C;
+  }
+  .search-bar button{
+    position: relative;
+    top: 14px;
+    right: 33px;
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+    color: #1F252C;  
+     
+  }
+  .search-bar a,p{
+    position: relative;
+    height: 20px;
+  }
+  /*본문부분*/
+.main-content{
+    position: absolute;
+    width: 81.5%;
+    height: 800px;
+    top: 120px;
+    left: 16.5%;
+}
+.info-m{
+    position: relative;
+    left: 7%;
+    top: 30px;
+    display: flex;
+}
+.change-nick{
+  padding-left: 5%;
+  display: flex;
+}
+.display-info{
+  display: flex;
+  position: absolute;
+  color: #FFFFFF;
+  width: 200px;
+  height: 20px;
+  font-size: 16px;
+  top: 50%;
+  left: 20%;
+}
+#user-name{
+  color: #9747FF;
+  font-size: 22px;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+}
+.change-nick-btn{
+  width: 100px;
+  height: 33px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #1F252C;
+    border-radius: 13px;
+    position: relative;
+    left: 10%;
+}
+
+.btn{
+    position: relative;
+    width: 100px;
+    height: 38px;
+    border-radius: 25px;
+    background-color: #1F252C;
+    color: #FFFFFF;
+    left: 5%;
+}
+.star-point{
+    position: relative;
+    left: 12%;
+    width: 350px;
+    height: 120px;
+    border-radius: 13px;
+    background-color: #1F252C;
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+.star-point i{
+    color: #9747FF;
+    background-color: #1F252C;
+}
+
+.change-num{
+    background-color: #1F252C;
+    height: 10px;
+    width: 10px;
+    color: #FFFFFF;
+    position: relative;
+    left: 28px;
+    font-size: 20px;
+}
+.rank-display{
+  top: 15px;
+  right: 6%;
+  position: relative;
+  background-color: #9747FF;
+  height: 85px;
+  width: 150px;
+  border-radius: 35px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#hash-rank
+{
+  background-color: #9747FF;
+  color: #FFFFFF;
+  position: absolute;
+  top: 20%;
+  left: 41%;
+}
+#percent-rank{
+  background-color: #9747FF;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+.easy{
+  background-color: #1F252C;
+}
+.easy img{
+  position: relative;
+  left: 30px;
+  top:10px;
+}
+.easy word{
+  top:10px;
+  background-color: #1F252C;
+  position: absolute;
+  left: 7%;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+/*본문 글 보는 부분*/
+.wrtie-content{
+    position: absolute;
+    width: 98%;
+    height: auto;
+    top: 180px;
+    left: 2%;
+    background-color: #1F252C;
+}
+.wrtie-content i{
+    color: #64b69c;
+    position: relative;
+    font-size: 24px;
+    left: 5%;
+    top: 10px;
+}
+.like-btn{
+  background-color: #1F252C;
+}
+.like-word{
+  position: relative;
+  top: 3px;
+  color: #FFFFFF;
+  font-size: 15px;
+  display: flex;
+  
+}
+
+.link-list{
+  position: relative;
+  background-color: #1F252C;
+ top: 15px;
+  padding-left: 8%;
+}
+.link-list li{
+  padding: 10px 10px;
+  background-color: #1F252C;
+  font-size: 20px;
+}
+.link-list li a{
+  background-color: #1F252C;
+}
+.link-list li::marker{
+  color: #9747FF;
+}
+  /*프로필사진부분*/
+  .profile-pic-div{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid grey;
+    position: relative;
+ 
+}
+
+#photo{
+    height: 100%;
+    width: 100%;
+}
+
+#file{
+    display: none;
+}
+
+#uploadBtn{
+    height: 23px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color:#9747FF;
+    line-height: 22px;
+    font-family: sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}

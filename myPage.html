@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myPage.css">
+    <title>Mypage</title>
+    <script src="https://kit.fontawesome.com/60e756bd1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="side-menu">
+            <h1 class="header"><a href="#"> I K J U N</a></h1>
+            <ul class="bar-links">
+             <li><a href="#"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
+             <li><a href="#"><i class="fa-regular fa-star"></i><p>Ranking</p></a></li>
+             <li><a href="#"><i class="fa-regular fa-user"></i><p>Mypage</p></a></li>
+             <li><a href="#"><i class="fa-solid fa-gear"></i><p>Setting</p></a></li>
+             <li><a href="#"><i class="fa-solid fa-question-circle"></i></i><p>About</p></a></li>
+            </ul>
+        </div> 
+        <nav class="navbar">
+            <form action="https://www.google.com/search" method="get" class="search-bar">
+                <input type="text" placeholder="검색하세요" autocomplete="off" style="color: #FFFFFF;">
+                <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="navbar-top">
+                    <img src="image.jpg" alt="" class="profile-img" >
+                    <div class="nickname">sonysonicmio</div>
+                        <div class="sub-control">
+                            <a href="test4.html">마이페이지</a> 
+                            <p style="color: white;">&nbsp&nbsp;|&nbsp&nbsp;</p> 
+                            <a href="test4.html">로그아웃</a>  
+                        </div>
+                    
+                    <!-- <i class="fa-solid fa-bell" id="bell"></i> -->
+                </div>
+            </form>  
+        </nav> 
+        <main class="main-content">
+            <section class="info-m">
+                <div class="profile-pic-div">
+                    <img src="image.jpg" id="photo" alt="">
+                    <input type="file"id="file">
+                    <label for="file" id="uploadBtn">+</label>
+                </div>
+                
+                <div class="change-nick">
+                    <form action="" onsubmit="return myFun()">
+                        <input type="text" id="user-name" placeholder="서버에서 받아옴?" autocomplete="off">
+                    <input type="submit" value="닉네임변경" class="change-nick-btn">
+                    </form>
+                </div>
+                  <span class="display-info"><p>아이디</p><p>&nbsp&nbsp;|&nbsp&nbsp;</p><p>이메일</p></span>
+                <div class="star-point"><word style="font-size: 23px; background-color: #1F252C; ">별점</word><i class="fa-regular fa-star"></i>
+                <p class="change-num">0</p></div>
+                <div class="rank-display">
+                    <p id="hash-rank"># 5</p>
+                    <p id="percent-rank">상위 1.02%</p>  
+                </div>
+            </section>
+            <section class="wrtie-content">
+                <!-- <i class="fa-solid fa-thumbs-up"><word class="like-word">좋아요</word></i> -->
+         <p class="easy"><img src="like.png" alt="" class="like-btn"><word>좋아요</word></p>
+                <ul class="link-list">
+                    <li><a href="#">포인터와 구조체 연습문제</a></li>
+                    <li><a href="#">확률과 통계 연습문제</a></li>
+                    <li><a href="#">프로그래밍 및 실습1 기출</a></li>
+                    <li><a href="#">포인터와 구조체 연습문제</a></li>
+                    <li><a href="#">확률과 통계 연습문제</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>  
+</body>
+<script src="myPage.js"></script>
+<!--<footer class="footer">
+    <ul class="navbar_links">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-discord"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </ul>
+</footer>-->
+</html>
