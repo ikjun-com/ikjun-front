@@ -165,10 +165,11 @@
     left: 280px;
   }
   .content h2{
+    width: 500px;
     position: relative;
-    left: 40px;
+    left: 5%;
     color: #DFDFDF;
-    font-size: 29px;
+    font-size: 24px;
   }
   .sub{
     position: absolute;
@@ -193,13 +194,16 @@
   .click-btn{
     list-style: none;
     text-decoration: none;
-    position: absolute;
     font-size: 20px;
     display: flex;
-    top:62%;
-    left: 80%;
+    position: relative;
+    float: right;
+    right: 3%;
+    top: 50%;
+    color: #FFFFFF;
   }
-  .up-icon, .down-icon, .comment-icon{
-    padding: 10px 10px;
-    color: #dfdfdf;
-  }
+    .click-btn img{
+      top:2px;
+      font-size: 17px;
+      padding: 5px 15px;
+    }
