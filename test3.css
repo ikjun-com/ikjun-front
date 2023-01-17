@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #121920;
+}
+a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+  }
+.container{
+    width: 80%;
+    min-width: 600px;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*사이드메뉴*/
+.side-menu{
+    width: 200px;
+    height: 100vh;
+    border: solid;
+    border-right-color: white;
+    position: relative;
+  }
+  .side-menu h1{
+    position: relative;
+    padding-left: 20%;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 1;
+  }
+  .bar-links{
+    list-style: none;
+    position: relative;
+    top:5%;
+  }
+  .bar-links li{
+    position: relative;
+    padding-left: 20%;
+  }
+  .bar-links li a{
+    text-decoration: none;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+  }
+  .bar-links li a i{
+    font-size: 22px;
+    margin-right: 20px;
+  }
+  /*검색창 관련부분*/
+  .head-bar{
+    position: absolute;
+    display: flex;
+    width: 750px;
+    min-width: 500px;
+    height: 8%;
+    left: 18%;
+    top: 1%;
+    border-bottom: 1px solid white;
+  }
+  .search-bar{
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    left: 15%;
+    border-radius: 60px;
+ 
+  }
+  .search-bar input{
+    border-radius: 15px;
+    flex: 1;
+    border:0;
+    outline: none;
+    padding: 20px 10px;
+    font-size: 15px;
+    background-color: #1F252C;
+  }
+  .search-bar i{
+    width: 25px;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  .search-bar button{
+    position: relative;
+    top: 14px;
+    right: 33px;
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+    color: #1F252C;   
+  }
+
+  .login-status{
+    position: relative;
+  }

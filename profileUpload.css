@@ -9,16 +9,10 @@ body{
     width: 100%;
 }
 
-h1{
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 30px;
-    color: #222;
-}
 
 .profile-pic-div{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +32,7 @@ h1{
 }
 
 #uploadBtn{
-    height: 40px;
+    height: 35px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -49,7 +43,7 @@ h1{
     color: wheat;
     line-height: 30px;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     cursor: pointer;
     display: none;
 }
