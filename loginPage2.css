@@ -3,58 +3,56 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-.login-title{
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left top,#121920, #536976);
+  }
+  
+  /*로그인 부분*/
+  
+  .form-control{
+    padding: 50px 30px 20px;
+    width: 90%;
+    max-width: 457px;
+    height: 600px;
+    position: absolute;
+    top:50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    background: #1F252C;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.8);
+  }
+  .inside-control{
+    position: relative;
+    top:10%;  
+  }
+  .form-control h1{
     color: white;
     padding-top: 10px;
     display: flex;
     position: relative;
     left :15%;
-}
-.control{
-    padding: 70px 10px;
-}
-.sub-title{
-    font-size: 30px;
-}
-.sub-data{
+  }
+  .sub-data{
+    width: 35%;
     display: flex;
     color: #9C9C9C;
     font-size: 5px;
     position: relative;
     left: 52%;
-}
-.container{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(to left top,#121920, #536976);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.container form{
-    width: 90%;
-    max-width: 457px;
-    height: 600px;
-    padding: 50px 30px 20px;
-    background: #1F252C;
-    border-radius: 4px;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.8);
-    position: relative;
-    right: 47%;
-
-}
-
-.input-group{
+  }
+  .input-group{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
     position: relative;
-}
-.input-group input, .input-group textarea{
+  }
+  .input-group input, .input-group textarea{
     flex-basis: 68%;
     background: transparent;
     border: 0;
@@ -63,18 +61,18 @@
     border-bottom: 1px solid #999;
     color: #DFDFDF;
     font-size: 16px;
-}
-.input-group input:focus{
+  }
+  .input-group input:focus{
     border-bottom-color: #BE54FF;
-}
-
-::placeholder{
+  }
+  
+  ::placeholder{
     font-size: 14px;
-}
-.find-id-link, .find-pwd-link{
+  }
+  .find-id-link, .find-pwd-link{
     cursor: pointer;
-}
-form button{
+  }
+  form button{
     background: #9747FF;
     color: #fff;
     border-radius: 4px;
@@ -85,26 +83,52 @@ form button{
     display: block;
     margin: 80px auto 10px;
     border-radius: 25px;
-}
-.btn-set{
+  }
+  .btn-set{
     display: flex;
     justify-content: center;
     font-size: 5px;
     color: #999;
-}
-.log-link{
+  }
+  .log-link{
     text-decoration: none;
     color: #fff;
     padding: 0 10px;
-}
-.side{
+  }
+  /*오른쪽 사이드부분 */
+  .side{
+    width: 40%;
+    position: absolute;
     font-family: Noto Sans KR;
-    position: relative;
-    left: 30%;
+    top: 45%;
+    left: 55%;
     color: #ABABAB;
-}
-.ikjun-title{
-    position: relative;
+  }
+  
+  .ikjun-title{
     font-size: 50px;
-    left: 30%;
-}
+  }
+  .sub-title{
+    font-size: 27px;
+  }
+  
+  /*화면이 줄어들면 바뀌는 부분*/
+  
+  @media (max-width:850px) {
+    .side{
+      display: none;
+    }
+    .form-control{
+      padding: 50px 30px 20px;
+      width: 90%;
+      max-width: 457px;
+      height: 600px;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 4px;
+      background: #1F252C;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.8);
+    }
+  }
