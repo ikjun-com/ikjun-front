@@ -7,7 +7,7 @@
   .container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to left top,#121920, #536976);
+    background-image: var(--background-color);
   }
   
   /*로그인 부분*/
@@ -22,7 +22,7 @@
     left: 25%;
     transform: translate(-50%,-50%);
     border-radius: 4px;
-    background: #1F252C;
+    background: var(--surface-color);
     box-shadow: 0 4px 30px rgba(0,0,0,0.8);
   }
   .inside-control{
@@ -30,7 +30,7 @@
     top:10%;  
   }
   .form-control h1{
-    color: white;
+    color: var(--onsurface-color);
     padding-top: 10px;
     display: flex;
     position: relative;
@@ -73,7 +73,7 @@
     cursor: pointer;
   }
   form button{
-    background: #9747FF;
+    background: var(--primary-color);
     color: #fff;
     border-radius: 4px;
     border: 1px solid rgba(255,255,255,0.7);
@@ -92,8 +92,32 @@
   }
   .log-link{
     text-decoration: none;
-    color: #fff;
+    color: var(--primary-color);
     padding: 0 10px;
+  }
+  .icon-control-gol{
+    width: 30px;
+    height: 30px;
+
+  }
+  .icon-control-navr{
+    width: 30px;
+    height: 30px;
+  }
+  /*구글,네이버로 로그인하기*/
+  .other-login{
+    display: flex;
+    justify-content: center;
+  }
+  .other-login a{
+    padding: 10px 10px;
+    text-decoration: none;
+    color: var(--onsurface-color);
+  }
+  .other-login img{
+    position: relative;
+    right: 3%;
+    top: 6px;
   }
   /*오른쪽 사이드부분 */
   .side{
@@ -102,14 +126,16 @@
     font-family: Noto Sans KR;
     top: 45%;
     left: 55%;
-    color: #ABABAB;
+  
   }
   
   .ikjun-title{
     font-size: 50px;
+    color: var(--onsurface-color);
   }
   .sub-title{
     font-size: 27px;
+    color: #9C9C9C;
   }
   
   /*화면이 줄어들면 바뀌는 부분*/
@@ -128,7 +154,22 @@
       left: 50%;
       transform: translate(-50%,-50%);
       border-radius: 4px;
-      background: #1F252C;
-      box-shadow: 0 4px 30px rgba(0,0,0,0.8);
+      background: var(--from-background-color);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
     }
+  }
+  /*라이트모드 다크모드*/
+  .light-theme{
+    --background-color: linear-gradient(to left top,#FFFFFF,#FFFFFF,#FFFFFF,#FF637F);
+    --primary-color: #FF637F;
+    --surface-color:#F3F3F3;
+    --onsurface-color:#2D2D2D;
+    --from-background-color : #FFFFFF;
+  }
+  :root{
+    --background-color: linear-gradient(to left top,#121920, #536976);
+    --primary-color: #9747FF;
+    --surface-color:#1F252C;
+    --onsurface-color:#DFDFDF;
+    --from-background-color : #121920;
   }
