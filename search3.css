@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #121920;
+    transition: 0.3s;
+  }
+  body{
+    background-color: var( --background-color);
   }
   .container{
+    background-color: var( --background-color);
     width: 1220px;
     height: 100vh;
     position: absolute;
@@ -14,7 +18,7 @@
   }
   a{
     text-decoration: none;
-    color: white;
+    color: var(--onsurface-color);
     list-style: none;
   }
   /*사이드 메뉴 css 근데 굳이 있어야되나..?*/
@@ -22,7 +26,7 @@
     width: 200px;
     height: 100vh;
     border: solid;
-    border-right-color: #1F252C;
+    border-color: var(--surface-color);
     position: relative;
   }
   .side-menu h1{
@@ -41,7 +45,7 @@
     padding: 10px 10px;
   }
   .bar-links li a{
-    color: white;
+    color: var(--onsurface-color);
     text-decoration: none;
     padding: 10px 14px;
     display: flex;
@@ -60,7 +64,7 @@
     top: 24px;
     left: 200px;
     border-bottom-style:solid;
-    border-color:#1F252C;
+    border-color:var(--surface-color);
   }
   .navbar-top {
     list-style: none;
@@ -71,10 +75,10 @@
     left: 30px;
   }
   .navbar-top i{
-    color : white;
+    color : var(--onsurface-color);
   }
   .navbar-join{
-    background-color: #1F252C;
+    background-color: var(--background-color);
     font-style: bold;
     border: none;
     border-radius: 30px;
@@ -83,8 +87,8 @@
   .navbar-login{
     border-style: outset;
     border: none;
-    background-color: #9747FF;
-    color: #D7BAFF;
+    background-color: var( --primary-color);
+    color: #FFFFFF;
     border-radius: 30px;
     padding: 10px 10px;
   }
@@ -96,8 +100,6 @@
     height: 50px;
     border-radius: 60px;
     left: 70px;
-  
-  
   }
   .search-bar input{
     border-radius: 15px;
@@ -106,12 +108,13 @@
     outline: none;
     padding: 20px 10px;
     font-size: 15px;
-    background-color: #1F252C;
+    background-color: var( --surface-color);
   }
   .search-bar i{
     width: 25px;
     font-size: 24px;
-    color: #FFFFFF;
+    color: var(--onsurface-color);
+    background-color: var( --surface-color);
   }
   .search-bar button{
     position: relative;
@@ -122,34 +125,34 @@
     width: 20px;
     height: 22px;
     cursor: pointer;
-    color: #1F252C;   
+    color: var( --primary-color);   
   }
   /*dropdown설정부분*/
   select {
     text-align-last: center;
   }
   .sort{
-    color: #9c9c9c;
+    color: var(--onsurface-color);
     position: absolute;
     top: 110px;
     left: 280px;
   }
   .sort select{
-    color: #9c9c9c;
-    background-color: #1F252C;
+    color: var(--onsurface-color);
+    background-color: var(--surface-color);
     border-radius: 13px;
     width: 150px;
     height: 35px;
   }
   .filter{
-    color: #9c9c9c;
+    color: var(--onsurface-color);
     position: absolute;
     top: 110px;
     left: 500px;
   }
   .filter select {
-    color: #9c9c9c;
-    background-color: #1F252C;
+    color: var(--onsurface-color);
+    background-color: var(--surface-color);
     border-radius: 13px;
     width: 150px;
     height: 35px;
@@ -168,7 +171,7 @@
     width: 500px;
     position: relative;
     left: 5%;
-    color: #DFDFDF;
+    color: var(--onsurface-color);
     font-size: 24px;
   }
   .sub{
@@ -186,7 +189,7 @@
   }
   .write-date{
     position: absolute;
-    color: #DFDFDF;
+    color: #9c9c9c;
     font-size: 17px;
     left: 90%;
     bottom: 70%;
@@ -200,10 +203,30 @@
     float: right;
     right: 3%;
     top: 50%;
-    color: #FFFFFF;
+    color: var(--onsurface-color);
   }
-    .click-btn img{
+  
+  .click-btn img{
       top:2px;
       font-size: 17px;
       padding: 5px 15px;
-    }
+  }
+/*다크모드 라이트모드 버튼*/
+#icon{
+  position: fixed;
+  left: 2%;
+  top: 80%;
+  cursor: pointer;
+}
+.light-theme{
+  --background-color: #FFFFFF;
+  --primary-color: #FF637F;
+  --surface-color:#F3F3F3;
+  --onsurface-color:#2D2D2D;
+}
+:root{
+  --background-color: #121920;
+  --primary-color: #9747FF;
+  --surface-color:#1F252C;
+  --onsurface-color:#DFDFDF;
+}

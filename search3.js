@@ -1,3 +1,17 @@
+let icon = document.getElementById("icon");
+
+
+icon.onclick = function(){
+    document.body.classList.toggle("light-theme");
+    if(document.body.classList.contains("light-theme")){
+        theme = "light";
+        icon.src="light-btn.png";
+    }else{
+        icon.src="dark-btn.png";
+        theme = "dark";
+    }
+}
+
 function tagSelected(e){
     let computer = ["프로그래밍및실습1","프로그래밍및실습2","컴퓨터수학1","컴퓨터수학2","컴퓨터미적분활용",
   "확률및통계","컴퓨터공학기초"];
