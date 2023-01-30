@@ -92,6 +92,35 @@
     border-radius: 30px;
     padding: 10px 10px;
   }
+  /*로그인 했으면 보는 부분*/
+  .log-in-control{
+    position: relative;
+    left: 7%;
+    display: flex;
+    height: 63px;
+    bottom: 13%;
+  }
+  .profile-img{
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+  }
+  .login-form{
+    position: relative;
+    top:7%;
+    left: 5%;
+  }
+  .nickname{
+    color: var( --primary-color);
+    font-size: 20px;
+    height: 20px;
+    top: 5%;
+  }
+  .sub-control{
+    display: flex;
+    font-size: 1%;
+    padding: 5px 5px;
+  }
   /*검색창 관련부분*/
   .search-bar{
     position: relative;
