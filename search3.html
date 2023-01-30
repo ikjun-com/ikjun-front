@@ -25,14 +25,14 @@
         <nav class="navbar">
             <form action="https://www.google.com/search" method="get" class="search-bar">
                 <input type="text" placeholder="검색하세요" autocomplete="off">
-                <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                
                 <ul class="navbar-top">
                     <li><a href="signUp2.html" class="navbar-join">회원가입</a></li> &nbsp; &nbsp; &nbsp;
                     <li><a href="loginPage2.html" class="navbar-login">로그인</a></li>
                 </ul>
                 <!--로그인시 보이는 코드 시작 -->
                <div class="log-in-control">
-                <img src="image.jpg" alt="" class="profile-img" >
+                    <img src="image.jpg" alt="" class="profile-img" >
                     <div class="login-form">
                         <p class="nickname">sonysonicmio</p>
                             <div class="sub-control">
@@ -41,11 +41,13 @@
                             <a href="test4.html">로그아웃</a>  
                         </div>
                     </div>
-                    </div>
-               
+                </div>
+                <!--로그인시 보이는 코드 종료-->
+                <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
             </form>  
         </nav> 
         <main>
+           <form action="" class="top-bar">
             <div class="sort">정렬</br>
                 <select name="sort">
                     <option value="" selected="selected">최신순</option>
@@ -54,7 +56,8 @@
             </div>
             <div class="filter">필터</br>
                 <select name="major" id="major" onchange="tagSelected(this)">
-                    <option value="" selected="selected" >학과</option>
+                    <option th:each="mType:${majorTypes}" th:text="${mType.value}" th:value="${mType.key}"></option>
+                    <option value="" selected="selected">학과</option>
                     <option value="a">컴퓨터학부</option>
                     <option value="b">소프트웨어학부</option>
                     <option value="c">글로벌미디어학부</option>
@@ -63,6 +66,8 @@
                     <option value="" selected="selected">과목명</option>
                 </select>
             </div>
+            <div class="write-btn"><a href="boardWrite.html">글쓰기</a></div>
+           </form>
             <div class="content">
                 <h2>포인터와 구조체 연습문제</h2>
                 <div class="write-date">2022.12.26</div>
