@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var( --background-color);
+}
+select {
+  text-align-last: center;
+}
+textarea{
+	resize: none;
+}
+.schema{
+  width: 1220px;
+  height: 50px;
+  position: relative;
+}
+.container{
+  width: 1220px;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/*nav-top: 맨윗줄 : 유저이름,사진,글제목,좋아요,싫어요 아이콘 */
+.nav-top{
+  color: var(--onsurface-color);
+
+  width: 1220px;
+  height: 5.5rem; 
+}
+.user-img{
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+}
+.user-info {
+  padding-left: 1%;
+  position: absolute;
+  padding-top: 0.5%;
+  color: var(--primary-color);
+}
+.write-date{
+  padding-left: 1%;
+  position: relative;
+  bottom: 0.8rem;
+  color: var(--onsurface-color);
+}
+.look-num{
+  padding-left: 1%;
+  position: relative;
+  bottom: 0.8rem;
+  left: 3%;
+  color: var(--onsurface-color);
+}
+
+.look-title{
+  position: absolute;
+  left: 70%;
+  bottom: 90%;
+  color: var(--onsurface-color);
+}
+.icon-btn{
+  position: absolute;
+  left: 84%;
+  bottom: 86%;
+  color: var(--onsurface-color);
+}
+
+/*글작성후 본문을 보는 부분*/
+.write-content-username{
+  width: 1220px;
+  height: auto;
+  font-size: 18px;
+  color: var(--primary-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.look-content{
+  border-radius: 13px;
+  width: 1220px;
+  height: 200px;
+  background-color: var(--surface-color);
+  color: #9c9c9c;
+  font-size: 24px;
+}
+
+.look-comment{
+  border-radius: 13px;
+  position: relative;
+  width: 1220px;
+  height: 200px;
+  color: #9c9c9c;
+  background-color: var(--surface-color);
+  font-size: 24px;
+}
+.register{ /*댓글창 크기 조절?*/
+  position: relative;
+  width: 1220px;
+  height: 150px;
+  color: #9c9c9c;
+}
+.register-comment{/*댓글창 작성 조절*/
+  border-radius: 13px;
+  position: relative;
+  width: 100%;
+  border: none;
+  color: #9c9c9c;
+  background-color: var(--surface-color);
+  height: 200px;
+
+  font-size: 24px;
+}
+
+textarea:focus{
+  outline: none;
+}
+.regi-btn{  /*댓글 등록 버튼*/
+  width: 60px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: var(--onsurface-color);
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  left: 94%;
+  bottom: 31%;
+}
+/*라이트모드 다크모드*/
+.light-theme{
+  --background-color: #FFFFFF;
+  --primary-color: #FF637F;
+  --surface-color:#F3F3F3;
+  --onsurface-color:#2D2D2D;
+}
+:root{
+  --background-color: #121920;
+  --primary-color: #9747FF;
+  --surface-color:#1F252C;
+  --onsurface-color:#DFDFDF;
+}

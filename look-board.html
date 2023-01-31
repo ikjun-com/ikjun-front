@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="look-board.css">
+</head>
+<body>
+    <div class="container">
+        <div class="schema"></div>  <!--위에 짤리는거 방지용 여백-->
+        <nav class="nav-top">
+            <div class="user-box">
+                <img src="image.jpg" alt="" class="user-img">
+                <span class="user-info">sonic6679</span>
+                <span class="write-date">2022.12.26</span>
+                <span class="look-num">조회수 : 160</span>
+            </div>
+            <h1 class="look-title">현대인과 성서 16주차 매우길다</h1>
+            <p class="icon-btn">
+                <img src="like.png" alt="" > 110
+                <img src="dislike-icon.png" alt="" style="padding-left: 1.3rem;"> 0
+            </p>
+        </nav>
+        <main>
+            <p class="write-content-username">본문 글작성한 사람 아이디 출력되는곳</p>
+            <div class="look-content" type="text" cols="30" rows="10" oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'>
+               본문이 출력되는곳
+            </div>
+            <p class="write-content-username">댓글 작성한 사람 아이디 출력되는곳</p>
+            <div class="look-comment" type="text" cols="30" rows="10" oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'>
+               댓글이 달리는곳
+            </div>
+            <p class="write-content-username">내 아이디 출력되는곳</p>
+            <div class="register">
+                <textarea type="text" placeholder="내용을 작성하세요" class="register-comment" cols="30" rows="10" oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'></textarea>
+                <button class="regi-btn">등록</button>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="look-board.js"></script>
+</html>
